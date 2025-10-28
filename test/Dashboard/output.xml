@@ -1,89 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-10-29T01:20:07.680448" rpa="false" schemaversion="5">
-<suite id="s1" name="Dailyreport" source="C:\Users\User\Desktop\robot\ADMIN AUTOMATE\test\Dashboard\Dailyreport.robot">
+<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-10-29T01:41:29.071384" rpa="false" schemaversion="5">
+<suite id="s1" name="Dailyreport" source="C:\Users\User\Desktop\robot\Admin sook\Test\Dashboard\Dailyreport.robot">
 <test id="s1-t1" name="Scenario: Dashboard - Daily Report" line="13">
 <kw name="Open Browser And Login Admin" owner="Keywords" type="SETUP">
 <kw name="Open Browser To Login Page" owner="AdminLoginPage">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-10-29T01:20:07.851510" level="INFO">Opening browser 'chrome' to base url 'https://web-backoffice-uat.tcctech-delivery.com/login'.</msg>
+<msg time="2025-10-29T01:41:29.254003" level="INFO">Opening browser 'chrome' to base url 'https://web-backoffice-uat.tcctech-delivery.com/login'.</msg>
 <arg>${LOGIN_URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-10-29T01:20:07.851319" elapsed="1.619246"/>
+<status status="PASS" start="2025-10-29T01:41:29.253811" elapsed="1.656161"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-10-29T01:20:09.470761" elapsed="0.022936"/>
+<status status="PASS" start="2025-10-29T01:41:30.910298" elapsed="0.031199"/>
 </kw>
 <kw name="Set Selenium Timeout" owner="SeleniumLibrary">
 <arg>${DEFAULT_TIMEOUT}</arg>
 <doc>Sets the timeout that is used by various keywords.</doc>
-<status status="PASS" start="2025-10-29T01:20:09.493861" elapsed="0.001036"/>
+<status status="PASS" start="2025-10-29T01:41:30.941674" elapsed="0.000886"/>
 </kw>
-<status status="PASS" start="2025-10-29T01:20:07.850795" elapsed="1.644187"/>
+<status status="PASS" start="2025-10-29T01:41:29.253242" elapsed="1.689401"/>
 </kw>
 <kw name="Perform Admin Login" owner="AdminLoginPage">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-29T01:20:09.495664" level="INFO">Typing text 'ltjadmin' into text field 'id:username'.</msg>
+<msg time="2025-10-29T01:41:30.943596" level="INFO">Typing text 'ltjadmin' into text field 'id:username'.</msg>
 <arg>${FIELD_USERNAME}</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-29T01:20:09.495394" elapsed="0.113976"/>
+<status status="PASS" start="2025-10-29T01:41:30.943327" elapsed="0.139174"/>
 </kw>
 <kw name="Input Password" owner="SeleniumLibrary">
-<msg time="2025-10-29T01:20:09.609746" level="INFO">Typing password into text field 'id:password'.</msg>
-<msg time="2025-10-29T01:20:09.629092" level="INFO">Temporally setting log level to: NONE</msg>
+<msg time="2025-10-29T01:41:31.082962" level="INFO">Typing password into text field 'id:password'.</msg>
+<msg time="2025-10-29T01:41:31.111137" level="INFO">Temporally setting log level to: NONE</msg>
 <arg>${FIELD_PASSWORD}</arg>
 <arg>${password}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-29T01:20:09.609530" elapsed="0.054243"/>
+<status status="PASS" start="2025-10-29T01:41:31.082689" elapsed="0.073705"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-10-29T01:20:09.664341" level="INFO">Clicking button 'xpath=//button[normalize-space(.)="เข้าสู่ระบบ"]'.</msg>
+<msg time="2025-10-29T01:41:31.156764" level="INFO">Clicking button 'xpath=//button[normalize-space(.)="เข้าสู่ระบบ"]'.</msg>
 <arg>${BTN_LOGIN}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-29T01:20:09.664096" elapsed="0.060016"/>
+<status status="PASS" start="2025-10-29T01:41:31.156599" elapsed="0.081201"/>
 </kw>
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
 <arg>${DASHBOARD_TEXT}</arg>
 <arg>${DEFAULT_TIMEOUT}</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2025-10-29T01:20:09.724255" elapsed="0.215849"/>
+<status status="PASS" start="2025-10-29T01:41:31.238145" elapsed="0.229928"/>
 </kw>
-<status status="PASS" start="2025-10-29T01:20:09.495124" elapsed="0.445098"/>
+<status status="PASS" start="2025-10-29T01:41:30.942780" elapsed="0.525437"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>✅ Login successful and ready for tests.</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-10-29T01:20:09.940351" elapsed="0.000564"/>
+<status status="PASS" start="2025-10-29T01:41:31.468345" elapsed="0.000316"/>
 </kw>
-<status status="PASS" start="2025-10-29T01:20:07.850554" elapsed="2.090446"/>
+<status status="PASS" start="2025-10-29T01:41:29.252978" elapsed="2.215795"/>
 </kw>
-<kw name="Navigate to Daily Report Page" owner="DashboardPage">
+<kw name="Navigate to Daily Report Page" owner="DailyReportPage">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-10-29T01:20:09.941628" level="INFO">Clicking element '//button[contains(text(),'เลือกแดชบอร์ด')]'.</msg>
+<msg time="2025-10-29T01:41:31.469592" level="INFO">Clicking element '//button[contains(text(),'เลือกแดชบอร์ด')]'.</msg>
 <arg>${BTN_SELECT_DASHBOARD}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-29T01:20:09.941459" elapsed="0.052331"/>
+<status status="PASS" start="2025-10-29T01:41:31.469425" elapsed="0.077719"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-10-29T01:20:09.994137" level="INFO">Clicking element '//li[contains(text(),'Daily Report')]'.</msg>
+<msg time="2025-10-29T01:41:31.547749" level="INFO">Clicking element '//li[contains(text(),'Daily Report')]'.</msg>
 <arg>${OPTION_DAILY_REPORT}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-29T01:20:09.993953" elapsed="0.068174"/>
+<status status="PASS" start="2025-10-29T01:41:31.547403" elapsed="0.083934"/>
 </kw>
 <kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
 <arg>${DROPDOWN_DAILY_REPORT}</arg>
 <arg>${DEFAULT_TIMEOUT}</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2025-10-29T01:20:10.062274" elapsed="0.007959"/>
+<status status="PASS" start="2025-10-29T01:41:31.631531" elapsed="0.009889"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>✅ Navigated to Daily Report Page.</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-10-29T01:20:10.070372" elapsed="0.000208"/>
+<status status="PASS" start="2025-10-29T01:41:31.641602" elapsed="0.000276"/>
 </kw>
-<status status="PASS" start="2025-10-29T01:20:09.941241" elapsed="0.129401"/>
+<status status="PASS" start="2025-10-29T01:41:31.469168" elapsed="0.172815"/>
+</kw>
+<kw name="Click Daily Report Refresh" owner="DailyReportPage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${BTN_REFRESH_DAILY}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-10-29T01:41:31.642490" elapsed="0.233628"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${BTN_REFRESH_DAILY}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-10-29T01:41:31.876261" elapsed="0.031073"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-10-29T01:41:31.907647" level="INFO">Clicking element '//*[normalize-space()='Refresh']'.</msg>
+<arg>${BTN_REFRESH_DAILY}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-29T01:41:31.907473" elapsed="0.464030"/>
 </kw>
 <kw name="Wait Quiet" owner="Keywords">
 <kw name="Run Keyword And Ignore Error" owner="BuiltIn">
@@ -91,1058 +110,372 @@
 <arg>${SPINNER}</arg>
 <arg>10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-10-29T01:20:10.071172" elapsed="0.226391"/>
+<status status="PASS" start="2025-10-29T01:41:32.372402" elapsed="0.017092"/>
 </kw>
 <arg>Wait Until Element Is Visible</arg>
 <arg>${SPINNER}</arg>
 <arg>10s</arg>
 <doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="PASS" start="2025-10-29T01:20:10.071061" elapsed="0.226586"/>
+<status status="PASS" start="2025-10-29T01:41:32.371901" elapsed="0.017670"/>
 </kw>
 <kw name="Run Keyword And Ignore Error" owner="BuiltIn">
 <kw name="Wait Until Element Is Not Visible" owner="SeleniumLibrary">
 <arg>${SPINNER}</arg>
 <arg>20s</arg>
 <doc>Waits until the element ``locator`` is not visible.</doc>
-<status status="PASS" start="2025-10-29T01:20:10.298187" elapsed="0.440418"/>
+<status status="PASS" start="2025-10-29T01:41:32.389820" elapsed="0.634758"/>
 </kw>
 <arg>Wait Until Element Is Not Visible</arg>
 <arg>${SPINNER}</arg>
 <arg>20s</arg>
 <doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="PASS" start="2025-10-29T01:20:10.297898" elapsed="0.440783"/>
+<status status="PASS" start="2025-10-29T01:41:32.389693" elapsed="0.634959"/>
 </kw>
-<status status="PASS" start="2025-10-29T01:20:10.070857" elapsed="0.667878"/>
+<status status="PASS" start="2025-10-29T01:41:32.371676" elapsed="0.653030"/>
 </kw>
-<kw name="Viewing Options" owner="Keywords">
-<for flavor="IN">
-<iter>
-<kw name="Set Viewing" owner="Keywords">
-<kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-10-29T01:20:10.739936" level="INFO">${opt} = xpath=//*[@role='listbox']//li[normalize-space(.)='5']</msg>
-<var>${opt}</var>
-<arg>xpath=//*[@role='listbox']//li[normalize-space(.)='${n}']</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-10-29T01:20:10.739799" elapsed="0.000160"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${VIEWING_BTN}</arg>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${DAILY_REPORT_FIRST_CELL}</arg>
 <arg>10s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-10-29T01:20:10.740045" elapsed="0.011748"/>
-</kw>
-<kw name="Scroll Element Into View" owner="SeleniumLibrary">
-<arg>${VIEWING_BTN}</arg>
-<doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" start="2025-10-29T01:20:10.751930" elapsed="0.279882"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-10-29T01:20:11.032255" level="INFO">Clicking element '//label[normalize-space(.)='Viewing']/following::button[@role='combobox']'.</msg>
-<arg>${VIEWING_BTN}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-29T01:20:11.032037" elapsed="0.064114"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${opt}</arg>
-<arg>5s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-10-29T01:20:11.096356" elapsed="0.014083"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-10-29T01:20:11.110797" level="INFO">Clicking element 'xpath=//*[@role='listbox']//li[normalize-space(.)='5']'.</msg>
-<arg>${opt}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-29T01:20:11.110596" elapsed="0.056968"/>
-</kw>
-<kw name="Wait Quiet" owner="Keywords">
-<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${SPINNER}</arg>
-<arg>10s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-10-29T01:20:11.168082" elapsed="0.011835"/>
-</kw>
-<arg>Wait Until Element Is Visible</arg>
-<arg>${SPINNER}</arg>
-<arg>10s</arg>
-<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="PASS" start="2025-10-29T01:20:11.167956" elapsed="0.012037"/>
-</kw>
-<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
-<kw name="Wait Until Element Is Not Visible" owner="SeleniumLibrary">
-<arg>${SPINNER}</arg>
-<arg>20s</arg>
-<doc>Waits until the element ``locator`` is not visible.</doc>
-<status status="PASS" start="2025-10-29T01:20:11.180230" elapsed="0.640385"/>
-</kw>
-<arg>Wait Until Element Is Not Visible</arg>
-<arg>${SPINNER}</arg>
-<arg>20s</arg>
-<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="PASS" start="2025-10-29T01:20:11.180107" elapsed="0.640582"/>
-</kw>
-<status status="PASS" start="2025-10-29T01:20:11.167741" elapsed="0.652999"/>
-</kw>
-<arg>${n}</arg>
-<status status="PASS" start="2025-10-29T01:20:10.739594" elapsed="1.081179"/>
-</kw>
-<kw name="Assert Viewing Summary" owner="Keywords">
-<kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-10-29T01:20:11.838418" level="INFO">${text} = 1 to 5 of 1041 records</msg>
-<var>${text}</var>
-<arg>${SUMMARY}</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-29T01:20:11.821130" elapsed="0.017324"/>
-</kw>
-<kw name="Should Contain" owner="BuiltIn">
-<arg>${text}</arg>
-<arg>1 to ${n} of</arg>
-<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
-<status status="PASS" start="2025-10-29T01:20:11.838590" elapsed="0.000153"/>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-10-29T01:41:33.024805" elapsed="0.006272"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>✅ Viewing ${n}: "${text}"</arg>
+<arg>✅ Refresh เสร็จสิ้น โหลดข้อมูลเรียบร้อย</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-10-29T01:20:11.838848" elapsed="0.000370"/>
+<status status="PASS" start="2025-10-29T01:41:33.031213" elapsed="0.000243"/>
 </kw>
-<arg>${n}</arg>
-<status status="PASS" start="2025-10-29T01:20:11.820907" elapsed="0.018403"/>
+<status status="PASS" start="2025-10-29T01:41:31.642228" elapsed="1.389313"/>
 </kw>
-<var name="${n}">5</var>
-<status status="PASS" start="2025-10-29T01:20:10.739466" elapsed="1.099915"/>
-</iter>
-<iter>
-<kw name="Set Viewing" owner="Keywords">
-<kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-10-29T01:20:11.840041" level="INFO">${opt} = xpath=//*[@role='listbox']//li[normalize-space(.)='10']</msg>
-<var>${opt}</var>
-<arg>xpath=//*[@role='listbox']//li[normalize-space(.)='${n}']</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-10-29T01:20:11.839904" elapsed="0.000160"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${VIEWING_BTN}</arg>
-<arg>10s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-10-29T01:20:11.840149" elapsed="0.030816"/>
-</kw>
-<kw name="Scroll Element Into View" owner="SeleniumLibrary">
-<arg>${VIEWING_BTN}</arg>
-<doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" start="2025-10-29T01:20:11.871102" elapsed="0.272965"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-10-29T01:20:12.144397" level="INFO">Clicking element '//label[normalize-space(.)='Viewing']/following::button[@role='combobox']'.</msg>
-<arg>${VIEWING_BTN}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-29T01:20:12.144216" elapsed="0.050365"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${opt}</arg>
-<arg>5s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-10-29T01:20:12.194721" elapsed="0.012298"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-10-29T01:20:12.207456" level="INFO">Clicking element 'xpath=//*[@role='listbox']//li[normalize-space(.)='10']'.</msg>
-<arg>${opt}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-29T01:20:12.207165" elapsed="0.058204"/>
-</kw>
-<kw name="Wait Quiet" owner="Keywords">
-<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${SPINNER}</arg>
-<arg>10s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-10-29T01:20:12.266198" elapsed="0.019582"/>
-</kw>
-<arg>Wait Until Element Is Visible</arg>
-<arg>${SPINNER}</arg>
-<arg>10s</arg>
-<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="PASS" start="2025-10-29T01:20:12.265940" elapsed="0.019916"/>
-</kw>
-<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
-<kw name="Wait Until Element Is Not Visible" owner="SeleniumLibrary">
-<arg>${SPINNER}</arg>
-<arg>20s</arg>
-<doc>Waits until the element ``locator`` is not visible.</doc>
-<status status="PASS" start="2025-10-29T01:20:12.286099" elapsed="0.632564"/>
-</kw>
-<arg>Wait Until Element Is Not Visible</arg>
-<arg>${SPINNER}</arg>
-<arg>20s</arg>
-<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="PASS" start="2025-10-29T01:20:12.285970" elapsed="0.632767"/>
-</kw>
-<status status="PASS" start="2025-10-29T01:20:12.265548" elapsed="0.653242"/>
-</kw>
-<arg>${n}</arg>
-<status status="PASS" start="2025-10-29T01:20:11.839673" elapsed="1.079151"/>
-</kw>
-<kw name="Assert Viewing Summary" owner="Keywords">
-<kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-10-29T01:20:12.928416" level="INFO">${text} = 1 to 10 of 1041 records</msg>
-<var>${text}</var>
-<arg>${SUMMARY}</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-29T01:20:12.919189" elapsed="0.009261"/>
-</kw>
-<kw name="Should Contain" owner="BuiltIn">
-<arg>${text}</arg>
-<arg>1 to ${n} of</arg>
-<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
-<status status="PASS" start="2025-10-29T01:20:12.928581" elapsed="0.000158"/>
-</kw>
+<kw name="Export Daily Report To Excel" owner="DailyReportPage">
 <kw name="Log To Console" owner="BuiltIn">
-<arg>✅ Viewing ${n}: "${text}"</arg>
+<arg>▶ Start exporting Daily Report to Excel...</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-10-29T01:20:12.928826" elapsed="0.000238"/>
+<status status="PASS" start="2025-10-29T01:41:33.032339" elapsed="0.000190"/>
 </kw>
-<arg>${n}</arg>
-<status status="PASS" start="2025-10-29T01:20:12.918957" elapsed="0.010208"/>
-</kw>
-<var name="${n}">10</var>
-<status status="PASS" start="2025-10-29T01:20:11.839501" elapsed="1.089699"/>
-</iter>
-<iter>
-<kw name="Set Viewing" owner="Keywords">
-<kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-10-29T01:20:12.929832" level="INFO">${opt} = xpath=//*[@role='listbox']//li[normalize-space(.)='25']</msg>
-<var>${opt}</var>
-<arg>xpath=//*[@role='listbox']//li[normalize-space(.)='${n}']</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-10-29T01:20:12.929711" elapsed="0.000143"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${VIEWING_BTN}</arg>
-<arg>10s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-10-29T01:20:12.929944" elapsed="0.010278"/>
-</kw>
-<kw name="Scroll Element Into View" owner="SeleniumLibrary">
-<arg>${VIEWING_BTN}</arg>
-<doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" start="2025-10-29T01:20:12.940399" elapsed="0.274961"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-10-29T01:20:13.215671" level="INFO">Clicking element '//label[normalize-space(.)='Viewing']/following::button[@role='combobox']'.</msg>
-<arg>${VIEWING_BTN}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-29T01:20:13.215505" elapsed="0.033200"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${opt}</arg>
-<arg>5s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-10-29T01:20:13.248842" elapsed="0.011862"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-10-29T01:20:13.261197" level="INFO">Clicking element 'xpath=//*[@role='listbox']//li[normalize-space(.)='25']'.</msg>
-<arg>${opt}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-29T01:20:13.260994" elapsed="0.041929"/>
-</kw>
-<kw name="Wait Quiet" owner="Keywords">
-<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${SPINNER}</arg>
-<arg>10s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-10-29T01:20:13.303382" elapsed="0.010057"/>
-</kw>
-<arg>Wait Until Element Is Visible</arg>
-<arg>${SPINNER}</arg>
-<arg>10s</arg>
-<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="PASS" start="2025-10-29T01:20:13.303283" elapsed="0.010231"/>
-</kw>
-<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
-<kw name="Wait Until Element Is Not Visible" owner="SeleniumLibrary">
-<arg>${SPINNER}</arg>
-<arg>20s</arg>
-<doc>Waits until the element ``locator`` is not visible.</doc>
-<status status="PASS" start="2025-10-29T01:20:13.313743" elapsed="0.634923"/>
-</kw>
-<arg>Wait Until Element Is Not Visible</arg>
-<arg>${SPINNER}</arg>
-<arg>20s</arg>
-<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="PASS" start="2025-10-29T01:20:13.313622" elapsed="0.635170"/>
-</kw>
-<status status="PASS" start="2025-10-29T01:20:13.303086" elapsed="0.645795"/>
-</kw>
-<arg>${n}</arg>
-<status status="PASS" start="2025-10-29T01:20:12.929496" elapsed="1.019450"/>
-</kw>
-<kw name="Assert Viewing Summary" owner="Keywords">
-<kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-10-29T01:20:13.960518" level="INFO">${text} = 1 to 25 of 1041 records</msg>
-<var>${text}</var>
-<arg>${SUMMARY}</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-29T01:20:13.949520" elapsed="0.011050"/>
-</kw>
-<kw name="Should Contain" owner="BuiltIn">
-<arg>${text}</arg>
-<arg>1 to ${n} of</arg>
-<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
-<status status="PASS" start="2025-10-29T01:20:13.960770" elapsed="0.000218"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>✅ Viewing ${n}: "${text}"</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-10-29T01:20:13.961096" elapsed="0.000349"/>
-</kw>
-<arg>${n}</arg>
-<status status="PASS" start="2025-10-29T01:20:13.949157" elapsed="0.012386"/>
-</kw>
-<var name="${n}">25</var>
-<status status="PASS" start="2025-10-29T01:20:12.929363" elapsed="1.032229"/>
-</iter>
-<iter>
-<kw name="Set Viewing" owner="Keywords">
-<kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-10-29T01:20:13.962381" level="INFO">${opt} = xpath=//*[@role='listbox']//li[normalize-space(.)='30']</msg>
-<var>${opt}</var>
-<arg>xpath=//*[@role='listbox']//li[normalize-space(.)='${n}']</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-10-29T01:20:13.962201" elapsed="0.000210"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${VIEWING_BTN}</arg>
-<arg>10s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-10-29T01:20:13.962533" elapsed="0.012180"/>
-</kw>
-<kw name="Scroll Element Into View" owner="SeleniumLibrary">
-<arg>${VIEWING_BTN}</arg>
-<doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" start="2025-10-29T01:20:13.974973" elapsed="0.279574"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-10-29T01:20:14.254866" level="INFO">Clicking element '//label[normalize-space(.)='Viewing']/following::button[@role='combobox']'.</msg>
-<arg>${VIEWING_BTN}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-29T01:20:14.254690" elapsed="0.033582"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${opt}</arg>
-<arg>5s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-10-29T01:20:14.288409" elapsed="0.011918"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-10-29T01:20:14.300632" level="INFO">Clicking element 'xpath=//*[@role='listbox']//li[normalize-space(.)='30']'.</msg>
-<arg>${opt}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-29T01:20:14.300465" elapsed="0.044465"/>
-</kw>
-<kw name="Wait Quiet" owner="Keywords">
-<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${SPINNER}</arg>
-<arg>10s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-10-29T01:20:14.345800" elapsed="0.010302"/>
-</kw>
-<arg>Wait Until Element Is Visible</arg>
-<arg>${SPINNER}</arg>
-<arg>10s</arg>
-<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="PASS" start="2025-10-29T01:20:14.345629" elapsed="0.010569"/>
-</kw>
-<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
-<kw name="Wait Until Element Is Not Visible" owner="SeleniumLibrary">
-<arg>${SPINNER}</arg>
-<arg>20s</arg>
-<doc>Waits until the element ``locator`` is not visible.</doc>
-<status status="PASS" start="2025-10-29T01:20:14.356747" elapsed="0.635619"/>
-</kw>
-<arg>Wait Until Element Is Not Visible</arg>
-<arg>${SPINNER}</arg>
-<arg>20s</arg>
-<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="PASS" start="2025-10-29T01:20:14.356414" elapsed="0.636071"/>
-</kw>
-<status status="PASS" start="2025-10-29T01:20:14.345163" elapsed="0.647412"/>
-</kw>
-<arg>${n}</arg>
-<status status="PASS" start="2025-10-29T01:20:13.961904" elapsed="1.030732"/>
-</kw>
-<kw name="Assert Viewing Summary" owner="Keywords">
-<kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-10-29T01:20:15.004127" level="INFO">${text} = 1 to 30 of 1041 records</msg>
-<var>${text}</var>
-<arg>${SUMMARY}</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-29T01:20:14.993258" elapsed="0.010920"/>
-</kw>
-<kw name="Should Contain" owner="BuiltIn">
-<arg>${text}</arg>
-<arg>1 to ${n} of</arg>
-<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
-<status status="PASS" start="2025-10-29T01:20:15.004363" elapsed="0.000200"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>✅ Viewing ${n}: "${text}"</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-10-29T01:20:15.004666" elapsed="0.003736"/>
-</kw>
-<arg>${n}</arg>
-<status status="PASS" start="2025-10-29T01:20:14.992849" elapsed="0.015710"/>
-</kw>
-<var name="${n}">30</var>
-<status status="PASS" start="2025-10-29T01:20:13.961736" elapsed="1.046876"/>
-</iter>
-<iter>
-<kw name="Set Viewing" owner="Keywords">
-<kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-10-29T01:20:15.009486" level="INFO">${opt} = xpath=//*[@role='listbox']//li[normalize-space(.)='50']</msg>
-<var>${opt}</var>
-<arg>xpath=//*[@role='listbox']//li[normalize-space(.)='${n}']</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-10-29T01:20:15.009300" elapsed="0.000220"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${VIEWING_BTN}</arg>
-<arg>10s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-10-29T01:20:15.009630" elapsed="0.011334"/>
-</kw>
-<kw name="Scroll Element Into View" owner="SeleniumLibrary">
-<arg>${VIEWING_BTN}</arg>
-<doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" start="2025-10-29T01:20:15.021174" elapsed="0.272041"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-10-29T01:20:15.293656" level="INFO">Clicking element '//label[normalize-space(.)='Viewing']/following::button[@role='combobox']'.</msg>
-<arg>${VIEWING_BTN}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-29T01:20:15.293418" elapsed="0.049316"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${opt}</arg>
-<arg>5s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-10-29T01:20:15.342941" elapsed="0.014087"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-10-29T01:20:15.357438" level="INFO">Clicking element 'xpath=//*[@role='listbox']//li[normalize-space(.)='50']'.</msg>
-<arg>${opt}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-29T01:20:15.357223" elapsed="0.048788"/>
-</kw>
-<kw name="Wait Quiet" owner="Keywords">
-<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${SPINNER}</arg>
-<arg>10s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-10-29T01:20:15.407073" elapsed="0.010830"/>
-</kw>
-<arg>Wait Until Element Is Visible</arg>
-<arg>${SPINNER}</arg>
-<arg>10s</arg>
-<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="PASS" start="2025-10-29T01:20:15.406899" elapsed="0.011113"/>
-</kw>
-<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
-<kw name="Wait Until Element Is Not Visible" owner="SeleniumLibrary">
-<arg>${SPINNER}</arg>
-<arg>20s</arg>
-<doc>Waits until the element ``locator`` is not visible.</doc>
-<status status="PASS" start="2025-10-29T01:20:15.418396" elapsed="0.679277"/>
-</kw>
-<arg>Wait Until Element Is Not Visible</arg>
-<arg>${SPINNER}</arg>
-<arg>20s</arg>
-<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="PASS" start="2025-10-29T01:20:15.418181" elapsed="0.679620"/>
-</kw>
-<status status="PASS" start="2025-10-29T01:20:15.406341" elapsed="0.691543"/>
-</kw>
-<arg>${n}</arg>
-<status status="PASS" start="2025-10-29T01:20:15.009000" elapsed="1.088943"/>
-</kw>
-<kw name="Assert Viewing Summary" owner="Keywords">
-<kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-10-29T01:20:16.116620" level="INFO">${text} = 1 to 50 of 1041 records</msg>
-<var>${text}</var>
-<arg>${SUMMARY}</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-29T01:20:16.100549" elapsed="0.016122"/>
-</kw>
-<kw name="Should Contain" owner="BuiltIn">
-<arg>${text}</arg>
-<arg>1 to ${n} of</arg>
-<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
-<status status="PASS" start="2025-10-29T01:20:16.116852" elapsed="0.000202"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>✅ Viewing ${n}: "${text}"</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-10-29T01:20:16.117163" elapsed="0.000934"/>
-</kw>
-<arg>${n}</arg>
-<status status="PASS" start="2025-10-29T01:20:16.098172" elapsed="0.020090"/>
-</kw>
-<var name="${n}">50</var>
-<status status="PASS" start="2025-10-29T01:20:15.008790" elapsed="1.109524"/>
-</iter>
-<var>${n}</var>
-<value>@{sizes}</value>
-<status status="PASS" start="2025-10-29T01:20:10.739245" elapsed="5.379130"/>
-</for>
-<arg>5</arg>
-<arg>10</arg>
-<arg>25</arg>
-<arg>30</arg>
-<arg>50</arg>
-<status status="PASS" start="2025-10-29T01:20:10.738990" elapsed="5.379485"/>
-</kw>
-<kw name="Pagination Admin" owner="Keywords">
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-10-29T01:20:18.120002" level="INFO">Slept 2 seconds.</msg>
+<msg time="2025-10-29T01:41:35.033184" level="INFO">Slept 2 seconds.</msg>
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-10-29T01:20:16.119299" elapsed="2.000847"/>
+<status status="PASS" start="2025-10-29T01:41:33.032649" elapsed="2.000635"/>
 </kw>
-<kw name="Run Keyword And Return Status" owner="BuiltIn">
-<kw name="Page Should Contain Element" owner="SeleniumLibrary">
-<msg time="2025-10-29T01:20:18.130123" level="INFO">Current page contains element 'xpath=//div[.//button[normalize-space(.)="Previous"] and .//button[normalize-space(.)="Next"]]//button[normalize-space(.)="1"]'.</msg>
-<arg>${BTN_P1}</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="PASS" start="2025-10-29T01:20:18.120415" elapsed="0.009804"/>
+<kw name="Verify Any Excel Appeared" owner="DailyReportPage">
+<kw name="Get Time" owner="BuiltIn">
+<msg time="2025-10-29T01:41:35.034115" level="INFO">${start} = 1761676895</msg>
+<var>${start}</var>
+<arg>epoch</arg>
+<doc>Returns the given time in the requested format.</doc>
+<status status="PASS" start="2025-10-29T01:41:35.033923" elapsed="0.000216"/>
 </kw>
-<msg time="2025-10-29T01:20:18.130356" level="INFO">${has_p1} = True</msg>
-<var>${has_p1}</var>
-<arg>Page Should Contain Element</arg>
-<arg>${BTN_P1}</arg>
-<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2025-10-29T01:20:18.120288" elapsed="0.010096"/>
+<kw name="List Files In Directory" owner="OperatingSystem">
+<msg time="2025-10-29T01:41:35.034388" level="INFO" html="true">Listing contents of directory '&lt;a href="file://C:\Users\User\Downloads"&gt;C:\Users\User\Downloads&lt;/a&gt;'.</msg>
+<msg time="2025-10-29T01:41:35.035002" level="INFO">3 files:
+daily_report_20251027_131750.xlsx
+daily_report_20251029_013442.xlsx
+daily_report_20251029_013547.xlsx</msg>
+<msg time="2025-10-29T01:41:35.035105" level="INFO">@{before} = [ daily_report_20251027_131750.xlsx | daily_report_20251029_013442.xlsx | daily_report_20251029_013547.xlsx ]</msg>
+<var>@{before}</var>
+<arg>${WIN_DOWNLOADS}</arg>
+<arg>pattern=${DAILY_PATTERN}</arg>
+<doc>Wrapper for `List Directory` that returns only files.</doc>
+<status status="PASS" start="2025-10-29T01:41:35.034228" elapsed="0.000897"/>
 </kw>
-<if>
-<branch type="IF" condition="${has_p1}">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${BTN_EXPORT_EXCEL}</arg>
+<arg>20s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-10-29T01:41:35.035236" elapsed="0.011178"/>
+</kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-10-29T01:20:18.131068" level="INFO">Clicking element 'xpath=//div[.//button[normalize-space(.)="Previous"] and .//button[normalize-space(.)="Next"]]//button[normalize-space(.)="1"]'.</msg>
-<arg>${BTN_P1}</arg>
+<msg time="2025-10-29T01:41:35.046803" level="INFO">Clicking element '//button[normalize-space()='Export Excel']'.</msg>
+<arg>${BTN_EXPORT_EXCEL}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-29T01:20:18.130784" elapsed="0.065613"/>
+<status status="PASS" start="2025-10-29T01:41:35.046559" elapsed="0.053566"/>
 </kw>
-<status status="PASS" start="2025-10-29T01:20:18.130509" elapsed="0.065990"/>
-</branch>
-<status status="PASS" start="2025-10-29T01:20:18.130474" elapsed="0.066102"/>
-</if>
-<kw name="Get Paging Numbers" owner="Keywords">
-<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
-<arg>${SUMMARY}</arg>
-<arg>10s</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2025-10-29T01:20:18.197158" elapsed="0.006806"/>
-</kw>
-<kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-10-29T01:20:18.213737" level="INFO">${t} = 1 to 50 of 1041 records</msg>
-<var>${t}</var>
-<arg>${SUMMARY}</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-29T01:20:18.204159" elapsed="0.009626"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>ℹ "${t}"</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-10-29T01:20:18.213973" elapsed="0.000569"/>
-</kw>
-<kw name="Get Regexp Matches" owner="String">
-<msg time="2025-10-29T01:20:18.215009" level="INFO">@{nums} = [ 1 | 50 | 1041 ]</msg>
-<var>@{nums}</var>
-<arg>${t}</arg>
-<arg>(\\d+)</arg>
-<doc>Returns a list of all non-overlapping matches in the given string.</doc>
-<status status="PASS" start="2025-10-29T01:20:18.214697" elapsed="0.000346"/>
-</kw>
-<kw name="Get Length" owner="BuiltIn">
-<msg time="2025-10-29T01:20:18.215293" level="INFO">Length is 3.</msg>
-<msg time="2025-10-29T01:20:18.215364" level="INFO">${cnt} = 3</msg>
-<var>${cnt}</var>
-<arg>${nums}</arg>
-<doc>Returns and logs the length of the given item as an integer.</doc>
-<status status="PASS" start="2025-10-29T01:20:18.215162" elapsed="0.000228"/>
-</kw>
-<if>
-<branch type="IF" condition="${cnt} &gt;= 3">
-<kw name="Convert To Integer" owner="BuiltIn">
-<msg time="2025-10-29T01:20:18.216387" level="INFO">${from} = 1</msg>
-<var>${from}</var>
-<arg>${nums[0]}</arg>
-<doc>Converts the given item to an integer number.</doc>
-<status status="PASS" start="2025-10-29T01:20:18.215712" elapsed="0.000705"/>
-</kw>
-<kw name="Convert To Integer" owner="BuiltIn">
-<msg time="2025-10-29T01:20:18.217229" level="INFO">${to} = 50</msg>
-<var>${to}</var>
-<arg>${nums[1]}</arg>
-<doc>Converts the given item to an integer number.</doc>
-<status status="PASS" start="2025-10-29T01:20:18.216528" elapsed="0.000735"/>
-</kw>
-<kw name="Convert To Integer" owner="BuiltIn">
-<msg time="2025-10-29T01:20:18.218121" level="INFO">${total} = 1041</msg>
-<var>${total}</var>
-<arg>${nums[2]}</arg>
-<doc>Converts the given item to an integer number.</doc>
-<status status="PASS" start="2025-10-29T01:20:18.217385" elapsed="0.000768"/>
-</kw>
-<return>
-<value>${from}</value>
-<value>${to}</value>
-<value>${total}</value>
-<status status="PASS" start="2025-10-29T01:20:18.218391" elapsed="0.000065"/>
-</return>
-<status status="PASS" start="2025-10-29T01:20:18.215493" elapsed="0.003054"/>
-</branch>
-<status status="PASS" start="2025-10-29T01:20:18.215465" elapsed="0.003134"/>
-</if>
-<if>
-<branch type="IF" condition="${cnt} == 1">
-<kw name="Convert To Integer" owner="BuiltIn">
-<var>${total}</var>
-<arg>${nums[0]}</arg>
-<doc>Converts the given item to an integer number.</doc>
-<status status="NOT RUN" start="2025-10-29T01:20:18.218914" elapsed="0.000033"/>
-</kw>
-<return>
-<value>0</value>
-<value>0</value>
-<value>${total}</value>
-<status status="NOT RUN" start="2025-10-29T01:20:18.219008" elapsed="0.000028"/>
-</return>
-<status status="NOT RUN" start="2025-10-29T01:20:18.218786" elapsed="0.000300"/>
-</branch>
-<status status="NOT RUN" start="2025-10-29T01:20:18.218761" elapsed="0.000362"/>
-</if>
-<kw name="Fail" owner="BuiltIn">
-<arg>Cannot parse summary: ${t}</arg>
-<doc>Fails the test with the given message and optionally alters its tags.</doc>
-<status status="NOT RUN" start="2025-10-29T01:20:18.219238" elapsed="0.000036"/>
-</kw>
-<msg time="2025-10-29T01:20:18.219510" level="INFO">${f1} = 1</msg>
-<msg time="2025-10-29T01:20:18.219557" level="INFO">${t1} = 50</msg>
-<msg time="2025-10-29T01:20:18.219598" level="INFO">${tot} = 1041</msg>
-<var>${f1}</var>
-<var>${t1}</var>
-<var>${tot}</var>
-<status status="PASS" start="2025-10-29T01:20:18.196880" elapsed="0.022743"/>
-</kw>
-<kw name="Should Be Equal As Integers" owner="BuiltIn">
-<msg time="2025-10-29T01:20:18.219882" level="INFO">Argument types are:
-&lt;class 'int'&gt;
-&lt;class 'str'&gt;</msg>
-<arg>${f1}</arg>
-<arg>1</arg>
-<doc>Fails if objects are unequal after converting them to integers.</doc>
-<status status="PASS" start="2025-10-29T01:20:18.219737" elapsed="0.000206"/>
-</kw>
-<kw name="Element Should Be Disabled" owner="SeleniumLibrary">
-<arg>${BTN_PREV}</arg>
-<doc>Verifies that element identified by ``locator`` is disabled.</doc>
-<status status="PASS" start="2025-10-29T01:20:18.220058" elapsed="0.013883"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>button is disble Pevious on first page</arg>
-<arg>as expected.</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-10-29T01:20:18.234139" elapsed="0.000370"/>
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="_find_new_file_by_pattern_since" owner="DailyReportPage">
+<kw name="List Files In Directory" owner="OperatingSystem">
+<msg time="2025-10-29T01:41:35.101087" level="INFO" html="true">Listing contents of directory '&lt;a href="file://C:\Users\User\Downloads"&gt;C:\Users\User\Downloads&lt;/a&gt;'.</msg>
+<msg time="2025-10-29T01:41:35.101460" level="INFO">3 files:
+daily_report_20251027_131750.xlsx
+daily_report_20251029_013442.xlsx
+daily_report_20251029_013547.xlsx</msg>
+<msg time="2025-10-29T01:41:35.101796" level="INFO">@{now} = [ daily_report_20251027_131750.xlsx | daily_report_20251029_013442.xlsx | daily_report_20251029_013547.xlsx ]</msg>
+<var>@{now}</var>
+<arg>${dir}</arg>
+<arg>pattern=${pattern}</arg>
+<doc>Wrapper for `List Directory` that returns only files.</doc>
+<status status="PASS" start="2025-10-29T01:41:35.100925" elapsed="0.000892"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-10-29T01:20:18.235007" level="INFO">${page_size} = 50</msg>
-<var>${page_size}</var>
-<arg>${t1}-${f1}+1</arg>
+<msg time="2025-10-29T01:41:35.102191" level="INFO">@{diff} = [ ]</msg>
+<var>@{diff}</var>
+<arg>[f for f in $now if f not in $before]</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-10-29T01:20:18.234666" elapsed="0.000377"/>
-</kw>
-<kw name="Go Next" owner="Keywords">
-<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
-<arg>${BTN_NEXT}</arg>
-<arg>10s</arg>
-<doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" start="2025-10-29T01:20:18.235460" elapsed="0.023131"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-10-29T01:20:18.259023" level="INFO">Clicking element 'xpath=//div[.//button[normalize-space(.)="Previous"] and .//button[normalize-space(.)="Next"]]//button[normalize-space(.)="Next"]'.</msg>
-<arg>${BTN_NEXT}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-29T01:20:18.258786" elapsed="0.074175"/>
-</kw>
-<status status="PASS" start="2025-10-29T01:20:18.235213" elapsed="0.097865"/>
-</kw>
-<kw name="Get Paging Numbers" owner="Keywords">
-<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
-<arg>${SUMMARY}</arg>
-<arg>10s</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2025-10-29T01:20:18.333661" elapsed="0.007001"/>
-</kw>
-<kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-10-29T01:20:18.350911" level="INFO">${t} = 51 to 100 of 1041 records</msg>
-<var>${t}</var>
-<arg>${SUMMARY}</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-29T01:20:18.340860" elapsed="0.010116"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>ℹ "${t}"</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-10-29T01:20:18.351186" elapsed="0.000397"/>
-</kw>
-<kw name="Get Regexp Matches" owner="String">
-<msg time="2025-10-29T01:20:18.351970" level="INFO">@{nums} = [ 51 | 100 | 1041 ]</msg>
-<var>@{nums}</var>
-<arg>${t}</arg>
-<arg>(\\d+)</arg>
-<doc>Returns a list of all non-overlapping matches in the given string.</doc>
-<status status="PASS" start="2025-10-29T01:20:18.351736" elapsed="0.000266"/>
-</kw>
-<kw name="Get Length" owner="BuiltIn">
-<msg time="2025-10-29T01:20:18.352246" level="INFO">Length is 3.</msg>
-<msg time="2025-10-29T01:20:18.352319" level="INFO">${cnt} = 3</msg>
-<var>${cnt}</var>
-<arg>${nums}</arg>
-<doc>Returns and logs the length of the given item as an integer.</doc>
-<status status="PASS" start="2025-10-29T01:20:18.352126" elapsed="0.000219"/>
+<status status="PASS" start="2025-10-29T01:41:35.101931" elapsed="0.000281"/>
 </kw>
 <if>
-<branch type="IF" condition="${cnt} &gt;= 3">
-<kw name="Convert To Integer" owner="BuiltIn">
-<msg time="2025-10-29T01:20:18.353325" level="INFO">${from} = 51</msg>
-<var>${from}</var>
-<arg>${nums[0]}</arg>
-<doc>Converts the given item to an integer number.</doc>
-<status status="PASS" start="2025-10-29T01:20:18.352646" elapsed="0.000711"/>
+<branch type="IF" condition="len(${diff}) == 0">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-10-29T01:41:35.102591" level="INFO">@{diff} = [ daily_report_20251027_131750.xlsx | daily_report_20251029_013442.xlsx | daily_report_20251029_013547.xlsx ]</msg>
+<var>@{diff}</var>
+<arg>@{now}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-10-29T01:41:35.102472" elapsed="0.000138"/>
 </kw>
-<kw name="Convert To Integer" owner="BuiltIn">
-<msg time="2025-10-29T01:20:18.354040" level="INFO">${to} = 100</msg>
-<var>${to}</var>
-<arg>${nums[1]}</arg>
-<doc>Converts the given item to an integer number.</doc>
-<status status="PASS" start="2025-10-29T01:20:18.353473" elapsed="0.000596"/>
-</kw>
-<kw name="Convert To Integer" owner="BuiltIn">
-<msg time="2025-10-29T01:20:18.354731" level="INFO">${total} = 1041</msg>
-<var>${total}</var>
-<arg>${nums[2]}</arg>
-<doc>Converts the given item to an integer number.</doc>
-<status status="PASS" start="2025-10-29T01:20:18.354186" elapsed="0.000573"/>
-</kw>
-<return>
-<value>${from}</value>
-<value>${to}</value>
-<value>${total}</value>
-<status status="PASS" start="2025-10-29T01:20:18.354820" elapsed="0.000050"/>
-</return>
-<status status="PASS" start="2025-10-29T01:20:18.352442" elapsed="0.002482"/>
+<status status="PASS" start="2025-10-29T01:41:35.102297" elapsed="0.000346"/>
 </branch>
-<status status="PASS" start="2025-10-29T01:20:18.352417" elapsed="0.002558"/>
+<status status="PASS" start="2025-10-29T01:41:35.102273" elapsed="0.000403"/>
 </if>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-10-29T01:41:35.102829" level="INFO">${newest} = NONE</msg>
+<var>${newest}</var>
+<arg>NONE</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-10-29T01:41:35.102747" elapsed="0.000117"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-10-29T01:41:35.103018" level="INFO">${latest} = -1</msg>
+<var>${latest}</var>
+<arg>-1</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-10-29T01:41:35.102937" elapsed="0.000097"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-10-29T01:41:35.103446" level="INFO">${p} = C:\Users\User\Downloads\daily_report_20251027_131750.xlsx</msg>
+<var>${p}</var>
+<arg>${dir}${/}${f}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-10-29T01:41:35.103326" elapsed="0.000138"/>
+</kw>
+<kw name="Get Modified Time" owner="OperatingSystem">
+<msg time="2025-10-29T01:41:35.103706" level="INFO" html="true">Last modified time of '&lt;a href="file://C:\Users\User\Downloads\daily_report_20251027_131750.xlsx"&gt;C:\Users\User\Downloads\daily_report_20251027_131750.xlsx&lt;/a&gt;' is 1761546079.</msg>
+<msg time="2025-10-29T01:41:35.103766" level="INFO">${ts} = 1761546079</msg>
+<var>${ts}</var>
+<arg>${p}</arg>
+<arg>epoch</arg>
+<doc>Returns the last modification time of a file or directory.</doc>
+<status status="PASS" start="2025-10-29T01:41:35.103540" elapsed="0.000242"/>
+</kw>
 <if>
-<branch type="IF" condition="${cnt} == 1">
-<kw name="Convert To Integer" owner="BuiltIn">
-<var>${total}</var>
-<arg>${nums[0]}</arg>
-<doc>Converts the given item to an integer number.</doc>
-<status status="NOT RUN" start="2025-10-29T01:20:18.355144" elapsed="0.000026"/>
+<branch type="IF" condition="${ts} &gt; ${start_epoch} and ${ts} &gt; ${latest}">
+<kw name="Set Variable" owner="BuiltIn">
+<var>${newest}</var>
+<arg>${p}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" start="2025-10-29T01:41:35.104041" elapsed="0.000020"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<var>${latest}</var>
+<arg>${ts}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" start="2025-10-29T01:41:35.104128" elapsed="0.000017"/>
+</kw>
+<status status="NOT RUN" start="2025-10-29T01:41:35.103853" elapsed="0.000317"/>
+</branch>
+<status status="PASS" start="2025-10-29T01:41:35.103837" elapsed="0.000360"/>
+</if>
+<var name="${f}">daily_report_20251027_131750.xlsx</var>
+<status status="PASS" start="2025-10-29T01:41:35.103244" elapsed="0.000970"/>
+</iter>
+<iter>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-10-29T01:41:35.104525" level="INFO">${p} = C:\Users\User\Downloads\daily_report_20251029_013442.xlsx</msg>
+<var>${p}</var>
+<arg>${dir}${/}${f}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-10-29T01:41:35.104398" elapsed="0.000147"/>
+</kw>
+<kw name="Get Modified Time" owner="OperatingSystem">
+<msg time="2025-10-29T01:41:35.104759" level="INFO" html="true">Last modified time of '&lt;a href="file://C:\Users\User\Downloads\daily_report_20251029_013442.xlsx"&gt;C:\Users\User\Downloads\daily_report_20251029_013442.xlsx&lt;/a&gt;' is 1761676694.</msg>
+<msg time="2025-10-29T01:41:35.104812" level="INFO">${ts} = 1761676694</msg>
+<var>${ts}</var>
+<arg>${p}</arg>
+<arg>epoch</arg>
+<doc>Returns the last modification time of a file or directory.</doc>
+<status status="PASS" start="2025-10-29T01:41:35.104614" elapsed="0.000214"/>
+</kw>
+<if>
+<branch type="IF" condition="${ts} &gt; ${start_epoch} and ${ts} &gt; ${latest}">
+<kw name="Set Variable" owner="BuiltIn">
+<var>${newest}</var>
+<arg>${p}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" start="2025-10-29T01:41:35.105041" elapsed="0.000019"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<var>${latest}</var>
+<arg>${ts}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" start="2025-10-29T01:41:35.105121" elapsed="0.000016"/>
+</kw>
+<status status="NOT RUN" start="2025-10-29T01:41:35.104880" elapsed="0.000284"/>
+</branch>
+<status status="PASS" start="2025-10-29T01:41:35.104869" elapsed="0.000330"/>
+</if>
+<var name="${f}">daily_report_20251029_013442.xlsx</var>
+<status status="PASS" start="2025-10-29T01:41:35.104336" elapsed="0.000879"/>
+</iter>
+<iter>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-10-29T01:41:35.105606" level="INFO">${p} = C:\Users\User\Downloads\daily_report_20251029_013547.xlsx</msg>
+<var>${p}</var>
+<arg>${dir}${/}${f}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-10-29T01:41:35.105464" elapsed="0.000161"/>
+</kw>
+<kw name="Get Modified Time" owner="OperatingSystem">
+<msg time="2025-10-29T01:41:35.105825" level="INFO" html="true">Last modified time of '&lt;a href="file://C:\Users\User\Downloads\daily_report_20251029_013547.xlsx"&gt;C:\Users\User\Downloads\daily_report_20251029_013547.xlsx&lt;/a&gt;' is 1761676759.</msg>
+<msg time="2025-10-29T01:41:35.105875" level="INFO">${ts} = 1761676759</msg>
+<var>${ts}</var>
+<arg>${p}</arg>
+<arg>epoch</arg>
+<doc>Returns the last modification time of a file or directory.</doc>
+<status status="PASS" start="2025-10-29T01:41:35.105693" elapsed="0.000197"/>
+</kw>
+<if>
+<branch type="IF" condition="${ts} &gt; ${start_epoch} and ${ts} &gt; ${latest}">
+<kw name="Set Variable" owner="BuiltIn">
+<var>${newest}</var>
+<arg>${p}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" start="2025-10-29T01:41:35.106099" elapsed="0.000018"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<var>${latest}</var>
+<arg>${ts}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" start="2025-10-29T01:41:35.106186" elapsed="0.000016"/>
+</kw>
+<status status="NOT RUN" start="2025-10-29T01:41:35.105941" elapsed="0.000287"/>
+</branch>
+<status status="PASS" start="2025-10-29T01:41:35.105930" elapsed="0.000321"/>
+</if>
+<var name="${f}">daily_report_20251029_013547.xlsx</var>
+<status status="PASS" start="2025-10-29T01:41:35.105403" elapsed="0.000863"/>
+</iter>
+<var>${f}</var>
+<value>@{diff}</value>
+<status status="PASS" start="2025-10-29T01:41:35.103085" elapsed="0.003209"/>
+</for>
+<kw name="Should Not Be Equal" owner="BuiltIn">
+<msg time="2025-10-29T01:41:35.106559" level="FAIL">No new daily_report file found after export: NONE == NONE</msg>
+<arg>${newest}</arg>
+<arg>NONE</arg>
+<arg>msg=No new daily_report file found after export</arg>
+<doc>Fails if the given objects are equal.</doc>
+<status status="FAIL" start="2025-10-29T01:41:35.106365" elapsed="0.000300">No new daily_report file found after export: NONE == NONE</status>
 </kw>
 <return>
-<value>0</value>
-<value>0</value>
-<value>${total}</value>
-<status status="NOT RUN" start="2025-10-29T01:20:18.355231" elapsed="0.000023"/>
+<value>${newest}</value>
+<status status="NOT RUN" start="2025-10-29T01:41:35.106719" elapsed="0.000027"/>
 </return>
-<status status="NOT RUN" start="2025-10-29T01:20:18.355044" elapsed="0.000253"/>
-</branch>
-<status status="NOT RUN" start="2025-10-29T01:20:18.355028" elapsed="0.000302"/>
-</if>
-<kw name="Fail" owner="BuiltIn">
-<arg>Cannot parse summary: ${t}</arg>
-<doc>Fails the test with the given message and optionally alters its tags.</doc>
-<status status="NOT RUN" start="2025-10-29T01:20:18.355409" elapsed="0.000035"/>
+<arg>${WIN_DOWNLOADS}</arg>
+<arg>${DAILY_PATTERN}</arg>
+<arg>${start}</arg>
+<arg>@{before}</arg>
+<status status="FAIL" start="2025-10-29T01:41:35.100641" elapsed="0.006187">No new daily_report file found after export: NONE == NONE</status>
 </kw>
-<msg time="2025-10-29T01:20:18.356269" level="INFO">${f2} = 51</msg>
-<msg time="2025-10-29T01:20:18.356352" level="INFO">${t2} = 100</msg>
-<msg time="2025-10-29T01:20:18.356405" level="INFO">${tot2} = 1041</msg>
-<var>${f2}</var>
-<var>${t2}</var>
-<var>${tot2}</var>
-<status status="PASS" start="2025-10-29T01:20:18.333383" elapsed="0.023052"/>
+<kw name="_find_new_file_by_pattern_since" owner="DailyReportPage">
+<kw name="List Files In Directory" owner="OperatingSystem">
+<msg time="2025-10-29T01:41:36.107654" level="INFO" html="true">Listing contents of directory '&lt;a href="file://C:\Users\User\Downloads"&gt;C:\Users\User\Downloads&lt;/a&gt;'.</msg>
+<msg time="2025-10-29T01:41:36.108013" level="INFO">3 files:
+daily_report_20251027_131750.xlsx
+daily_report_20251029_013442.xlsx
+daily_report_20251029_013547.xlsx</msg>
+<msg time="2025-10-29T01:41:36.108104" level="INFO">@{now} = [ daily_report_20251027_131750.xlsx | daily_report_20251029_013442.xlsx | daily_report_20251029_013547.xlsx ]</msg>
+<var>@{now}</var>
+<arg>${dir}</arg>
+<arg>pattern=${pattern}</arg>
+<doc>Wrapper for `List Directory` that returns only files.</doc>
+<status status="PASS" start="2025-10-29T01:41:36.107501" elapsed="0.000622"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-10-29T01:20:18.356864" level="INFO">${expected_from2} = 51</msg>
-<var>${expected_from2}</var>
-<arg>${t1} + 1</arg>
+<msg time="2025-10-29T01:41:36.108481" level="INFO">@{diff} = [ ]</msg>
+<var>@{diff}</var>
+<arg>[f for f in $now if f not in $before]</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-10-29T01:20:18.356604" elapsed="0.000290"/>
+<status status="PASS" start="2025-10-29T01:41:36.108229" elapsed="0.000274"/>
 </kw>
-<kw name="Should Be Equal As Integers" owner="BuiltIn">
-<arg>${f2}</arg>
-<arg>${expected_from2}</arg>
-<doc>Fails if objects are unequal after converting them to integers.</doc>
-<status status="PASS" start="2025-10-29T01:20:18.357013" elapsed="0.000186"/>
+<if>
+<branch type="IF" condition="len(${diff}) == 0">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-10-29T01:41:36.108841" level="INFO">@{diff} = [ daily_report_20251027_131750.xlsx | daily_report_20251029_013442.xlsx | daily_report_20251029_013547.xlsx ]</msg>
+<var>@{diff}</var>
+<arg>@{now}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-10-29T01:41:36.108721" elapsed="0.000139"/>
 </kw>
-<kw name="Go Prev" owner="Keywords">
-<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
-<arg>${BTN_PREV}</arg>
-<arg>10s</arg>
-<doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" start="2025-10-29T01:20:18.357715" elapsed="0.018524"/>
+<status status="PASS" start="2025-10-29T01:41:36.108572" elapsed="0.000321"/>
+</branch>
+<status status="PASS" start="2025-10-29T01:41:36.108556" elapsed="0.000364"/>
+</if>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-10-29T01:41:36.109099" level="INFO">${newest} = NONE</msg>
+<var>${newest}</var>
+<arg>NONE</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-10-29T01:41:36.109012" elapsed="0.000104"/>
 </kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-10-29T01:20:18.376656" level="INFO">Clicking element 'xpath=//div[.//button[normalize-space(.)="Previous"] and .//button[normalize-space(.)="Next"]]//button[normalize-space(.)="Previous"]'.</msg>
-<msg time="2025-10-29T01:20:19.643492" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-12.png"&gt;&lt;img src="selenium-screenshot-12.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2025-10-29T01:20:19.643704" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button class="MuiButton-root MuiButton-variantPlain MuiButton-colorPrimary MuiButton-sizeSm css-1trep50" type="button"&gt;...&lt;/button&gt; is not clickable at point (1463, 873). Other element would receive the click: &lt;td&gt;...&lt;/td&gt;
-  (Session info: chrome=141.0.7390.123)
-Stacktrace:
-	GetHandleVerifier [0x0x7ff6f524e8e5+80021]
-	GetHandleVerifier [0x0x7ff6f524e940+80112]
-	(No symbol) [0x0x7ff6f4fd060f]
-	(No symbol) [0x0x7ff6f5030a39]
-	(No symbol) [0x0x7ff6f502e3be]
-	(No symbol) [0x0x7ff6f502b2e1]
-	(No symbol) [0x0x7ff6f502a1a0]
-	(No symbol) [0x0x7ff6f501b7c8]
-	(No symbol) [0x0x7ff6f505122a]
-	(No symbol) [0x0x7ff6f501b056]
-	(No symbol) [0x0x7ff6f5051440]
-	(No symbol) [0x0x7ff6f507968a]
-	(No symbol) [0x0x7ff6f5051003]
-	(No symbol) [0x0x7ff6f50195d1]
-	(No symbol) [0x0x7ff6f501a3f3]
-	GetHandleVerifier [0x0x7ff6f550dc7d+2960429]
-	GetHandleVerifier [0x0x7ff6f5507f3a+2936554]
-	GetHandleVerifier [0x0x7ff6f5528977+3070247]
-	GetHandleVerifier [0x0x7ff6f52683ce+185214]
-	GetHandleVerifier [0x0x7ff6f526fe1f+216527]
-	GetHandleVerifier [0x0x7ff6f5257b24+117460]
-	GetHandleVerifier [0x0x7ff6f5257cdf+117903]
-	GetHandleVerifier [0x0x7ff6f523dbb8+11112]
-	BaseThreadInitThunk [0x0x7ff8887fe8d7+23]
-	RtlUserThreadStart [0x0x7ff88a0ac53c+44]
-</msg>
-<arg>${BTN_PREV}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="FAIL" start="2025-10-29T01:20:18.376432" elapsed="1.272770">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button class="MuiButton-root MuiButton-variantPlain MuiButton-colorPrimary MuiButton-sizeSm css-1trep50" type="button"&gt;...&lt;/button&gt; is not clickable at point (1463, 873). Other element would receive the click: &lt;td&gt;...&lt;/td&gt;
-  (Session info: chrome=141.0.7390.123)
-Stacktrace:
-	GetHandleVerifier [0x0x7ff6f524e8e5+80021]
-	GetHandleVerifier [0x0x7ff6f524e940+80112]
-	(No symbol) [0x0x7ff6f4fd060f]
-	(No symbol) [0x0x7ff6f5030a39]
-	(No symbol) [0x0x7ff6f502e3be]
-	(No symbol) [0x0x7ff6f502b2e1]
-	(No symbol) [0x0x7ff6f502a1a0]
-	(No symbol) [0x0x7ff6f501b7c8]
-	(No symbol) [0x0x7ff6f505122a]
-	(No symbol) [0x0x7ff6f501b056]
-	(No symbol) [0x0x7ff6f5051440]
-	(No symbol) [0x0x7ff6f507968a]
-	(No symbol) [0x0x7ff6f5051003]
-	(No symbol) [0x0x7ff6f50195d1]
-	(No symbol) [0x0x7ff6f501a3f3]
-	GetHandleVerifier [0x0x7ff6f550dc7d+2960429]
-	GetHandleVerifier [0x0x7ff6f5507f3a+2936554]
-	GetHandleVerifier [0x0x7ff6f5528977+3070247]
-	GetHandleVerifier [0x0x7ff6f52683ce+185214]
-	GetHandleVerifier [0x0x7ff6f526fe1f+216527]
-	GetHandleVerifier [0x0x7ff6f5257b24+117460]
-	GetHandleVerifier [0x0x7ff6f5257cdf+117903]
-	GetHandleVerifier [0x0x7ff6f523dbb8+11112]
-	BaseThreadInitThunk [0x0x7ff8887fe8d7+23]
-	RtlUserThreadStart [0x0x7ff88a0ac53c+44]
-</status>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-10-29T01:41:36.109251" level="INFO">${latest} = -1</msg>
+<var>${latest}</var>
+<arg>-1</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-10-29T01:41:36.109182" elapsed="0.000084"/>
 </kw>
-<status status="FAIL" start="2025-10-29T01:20:18.357481" elapsed="1.292101">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button class="MuiButton-root MuiButton-variantPlain MuiButton-colorPrimary MuiButton-sizeSm css-1trep50" type="button"&gt;...&lt;/button&gt; is not clickable at point (1463, 873). Other element would receive the click: &lt;td&gt;...&lt;/td&gt;
-  (Session info: chrome=141.0.7390.123)
-Stacktrace:
-	GetHandleVerifier [0x0x7ff6f524e8e5+80021]
-	GetHandleVerifier [0x0x7ff6f524e940+80112]
-	(No symbol) [0x0x7ff6f4fd060f]
-	(No symbol) [0x0x7ff6f5030a39]
-	(No symbol) [0x0x7ff6f502e3be]
-	(No symbol) [0x0x7ff6f502b2e1]
-	(No symbol) [0x0x7ff6f502a1a0]
-	(No symbol) [0x0x7ff6f501b7c8]
-	(No symbol) [0x0x7ff6f505122a]
-	(No symbol) [0x0x7ff6f501b056]
-	(No symbol) [0x0x7ff6f5051440]
-	(No symbol) [0x0x7ff6f507968a]
-	(No symbol) [0x0x7ff6f5051003]
-	(No symbol) [0x0x7ff6f50195d1]
-	(No symbol) [0x0x7ff6f501a3f3]
-	GetHandleVerifier [0x0x7ff6f550dc7d+2960429]
-	GetHandleVerifier [0x0x7ff6f5507f3a+2936554]
-	GetHandleVerifier [0x0x7ff6f5528977+3070247]
-	GetHandleVerifier [0x0x7ff6f52683ce+185214]
-	GetHandleVerifier [0x0x7ff6f526fe1f+216527]
-	GetHandleVerifier [0x0x7ff6f5257b24+117460]
-	GetHandleVerifier [0x0x7ff6f5257cdf+117903]
-	GetHandleVerifier [0x0x7ff6f523dbb8+11112]
-	BaseThreadInitThunk [0x0x7ff8887fe8d7+23]
-	RtlUserThreadStart [0x0x7ff88a0ac53c+44]
-</status>
+<for flavor="IN">
+<iter>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-10-29T01:41:36.109620" level="INFO">${p} = C:\Users\User\Downloads\daily_report_20251027_131750.xlsx</msg>
+<var>${p}</var>
+<arg>${dir}${/}${f}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-10-29T01:41:36.109504" elapsed="0.000135"/>
 </kw>
-<kw name="Get Paging Numbers" owner="Keywords">
-<var>${f3}</var>
-<var>${t3}</var>
-<var>${tot3}</var>
-<status status="NOT RUN" start="2025-10-29T01:20:19.650127" elapsed="0.000057"/>
+<kw name="Get Modified Time" owner="OperatingSystem">
+<msg time="2025-10-29T01:41:36.109857" level="INFO" html="true">Last modified time of '&lt;a href="file://C:\Users\User\Downloads\daily_report_20251027_131750.xlsx"&gt;C:\Users\User\Downloads\daily_report_20251027_131750.xlsx&lt;/a&gt;' is 1761546079.</msg>
+<msg time="2025-10-29T01:41:36.109919" level="INFO">${ts} = 1761546079</msg>
+<var>${ts}</var>
+<arg>${p}</arg>
+<arg>epoch</arg>
+<doc>Returns the last modification time of a file or directory.</doc>
+<status status="PASS" start="2025-10-29T01:41:36.109714" elapsed="0.000221"/>
 </kw>
-<kw name="Should Be Equal As Integers" owner="BuiltIn">
-<arg>${f3}</arg>
-<arg>1</arg>
-<doc>Fails if objects are unequal after converting them to integers.</doc>
-<status status="NOT RUN" start="2025-10-29T01:20:19.650331" elapsed="0.000039"/>
+<if>
+<branch type="IF" condition="${ts} &gt; ${start_epoch} and ${ts} &gt; ${latest}">
+<kw name="Set Variable" owner="BuiltIn">
+<var>${newest}</var>
+<arg>${p}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" start="2025-10-29T01:41:36.110168" elapsed="0.000018"/>
 </kw>
-<kw name="Should Be Equal As Integers" owner="BuiltIn">
-<arg>${t3}</arg>
-<arg>${page_size}</arg>
-<doc>Fails if objects are unequal after converting them to integers.</doc>
-<status status="NOT RUN" start="2025-10-29T01:20:19.650739" elapsed="0.000043"/>
+<kw name="Set Variable" owner="BuiltIn">
+<var>${latest}</var>
+<arg>${ts}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" start="2025-10-29T01:41:36.110259" elapsed="0.000017"/>
 </kw>
-<kw name="Run Keyword And Return Status" owner="BuiltIn">
-<var>${has_last}</var>
-<arg>Page Should Contain Element</arg>
-<arg>${BTN_LAST_NUM}</arg>
-<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
-<status status="NOT RUN" start="2025-10-29T01:20:19.650923" elapsed="0.000392"/>
+<status status="NOT RUN" start="2025-10-29T01:41:36.110000" elapsed="0.000300"/>
+</branch>
+<status status="PASS" start="2025-10-29T01:41:36.109986" elapsed="0.000337"/>
+</if>
+<var name="${f}">daily_report_20251027_131750.xlsx</var>
+<status status="PASS" start="2025-10-29T01:41:36.109445" elapsed="0.000893"/>
+</iter>
+<iter>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-10-29T01:41:36.110600" level="INFO">${p} = C:\Users\User\Downloads\daily_report_20251029_013442.xlsx</msg>
+<var>${p}</var>
+<arg>${dir}${/}${f}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-10-29T01:41:36.110485" elapsed="0.000132"/>
 </kw>
-<kw name="Run Keyword If" owner="BuiltIn">
-<arg>${has_last}</arg>
-<arg>Go Last Visible Page</arg>
-<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="NOT RUN" start="2025-10-29T01:20:19.651561" elapsed="0.000139"/>
-</kw>
-<kw name="Get Paging Numbers" owner="Keywords">
-<var>${fl}</var>
-<var>${tl}</var>
-<var>${totl}</var>
-<status status="NOT RUN" start="2025-10-29T01:20:19.652153" elapsed="0.000053"/>
-</kw>
-<kw name="Should Be Equal As Integers" owner="BuiltIn">
-<arg>${tl}</arg>
-<arg>${totl}</arg>
-<doc>Fails if objects are unequal after converting them to integers.</doc>
-<status status="NOT RUN" start="2025-10-29T01:20:19.652577" elapsed="0.000041"/>
-</kw>
-<kw name="Element Should Be Disabled" owner="SeleniumLibrary">
-<arg>${BTN_NEXT}</arg>
-<doc>Verifies that element identified by ``locator`` is disabled.</doc>
-<status status="NOT RUN" start="2025-10-29T01:20:19.652746" elapsed="0.000030"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>button is disabled on last page as expected.</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="NOT RUN" start="2025-10-29T01:20:19.653095" elapsed="0.000041"/>
-</kw>
-<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<arg>Pagination_completed.png</arg>
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="NOT RUN" start="2025-10-29T01:20:19.653270" elapsed="0.000028"/>
-</kw>
-<status status="FAIL" start="2025-10-29T01:20:16.119047" elapsed="3.534411">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button class="MuiButton-root MuiButton-variantPlain MuiButton-colorPrimary MuiButton-sizeSm css-1trep50" type="button"&gt;...&lt;/button&gt; is not clickable at point (1463, 873). Other element would receive the click: &lt;td&gt;...&lt;/td&gt;
-  (Session info: chrome=141.0.7390.123)
-Stacktrace:
-	GetHandleVerifier [0x0x7ff6f524e8e5+80021]
-	GetHandleVerifier [0x0x7ff6f524e940+80112]
-	(No symbol) [0x0x7ff6f4fd060f]
-	(No symbol) [0x0x7ff6f5030a39]
-	(No symbol) [0x0x7ff6f502e3be]
-	(No symbol) [0x0x7ff6f502b2e1]
-	(No symbol) [0x0x7ff6f502a1a0]
-	(No symbol) [0x0x7ff6f501b7c8]
-	(No symbol) [0x0x7ff6f505122a]
-	(No symbol) [0x0x7ff6f501b056]
-	(No symbol) [0x0x7ff6f5051440]
-	(No symbol) [0x0x7ff6f507968a]
-	(No symbol) [0x0x7ff6f5051003]
-	(No symbol) [0x0x7ff6f50195d1]
-	(No symbol) [0x0x7ff6f501a3f3]
-	GetHandleVerifier [0x0x7ff6f550dc7d+2960429]
-	GetHandleVerifier [0x0x7ff6f5507f3a+2936554]
-	GetHandleVerifier [0x0x7ff6f5528977+3070247]
-	GetHandleVerifier [0x0x7ff6f52683ce+185214]
-	GetHandleVerifier [0x0x7ff6f526fe1f+216527]
-	GetHandleVerifier [0x0x7ff6f5257b24+117460]
-	GetHandleVerifier [0x0x7ff6f5257cdf+117903]
-	GetHandleVerifier [0x0x7ff6f523dbb8+11112]
-	BaseThreadInitThunk [0x0x7ff8887fe8d7+23]
-	RtlUserThreadStart [0x0x7ff88a0ac53c+44]
-</status>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>✅ Test Completed: Daily Report Refresh successful.</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="NOT RUN" start="2025-10-29T01:20:19.654238" elapsed="0.000058"/>
-</kw>
-<kw name="Close Browser Session" owner="Keywords" type="TEARDOWN">
-<kw name="Close Admin Browser" owner="AdminLoginPage">
-<kw name="Close Browser" owner="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-10-29T01:20:19.657129" elapsed="2.199797"/>
-</kw>
-<status status="PASS" start="2025-10-29T01:20:19.656502" elapsed="2.200521"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>✅ Browser closed.</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-10-29T01:20:21.857129" elapsed="0.000229"/>
-</kw>
-<status status="PASS" start="2025-10-29T01:20:19.655313" elapsed="2.202130"/>
-</kw>
-<tag>Dashboard</tag>
-<tag>Smoke</tag>
-<status status="FAIL" start="2025-10-29T01:20:07.849949" elapsed="14.007616">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button class="MuiButton-root MuiButton-variantPlain MuiButton-colorPrimary MuiButton-sizeSm css-1trep50" type="button"&gt;...&lt;/button&gt; is not clickable at point (1463, 873). Other element would receive the click: &lt;td&gt;...&lt;/td&gt;
-  (Session info: chrome=141.0.7390.123)
-Stacktrace:
-	GetHandleVerifier [0x0x7ff6f524e8e5+80021]
-	GetHandleVerifier [0x0x7ff6f524e940+80112]
-	(No symbol) [0x0x7ff6f4fd060f]
-	(No symbol) [0x0x7ff6f5030a39]
-	(No symbol) [0x0x7ff6f502e3be]
-	(No symbol) [0x0x7ff6f502b2e1]
-	(No symbol) [0x0x7ff6f502a1a0]
-	(No symbol) [0x0x7ff6f501b7c8]
-	(No symbol) [0x0x7ff6f505122a]
-	(No symbol) [0x0x7ff6f501b056]
-	(No symbol) [0x0x7ff6f5051440]
-	(No symbol) [0x0x7ff6f507968a]
-	(No symbol) [0x0x7ff6f5051003]
-	(No symbol) [0x0x7ff6f50195d1]
-	(No symbol) [0x0x7ff6f501a3f3]
-	GetHandleVerifier [0x0x7ff6f550dc7d+2960429]
-	GetHandleVerifier [0x0x7ff6f5507f3a+2936554]
-	GetHandleVerifier [0x0x7ff6f5528977+3070247]
-	GetHandleVerifier [0x0x7ff6f52683ce+185214]
-	GetHandleVerifier [0x0x7ff6f526fe1f+216527]
-	GetHandleVerifier [0x0x7ff6f5257b24+117460]
-	GetHandleVerifier [0x0x7ff6f5257cdf+117903]
-	GetHandleVerifier [0x0x7ff6f523dbb8+11112]
-	BaseThreadInitThunk [0x0x7ff8887fe8d7+23]
-	RtlUserThreadStart [0x0x7ff88a0ac53c+44]
-</status>
-</test>
-<status status="FAIL" start="2025-10-29T01:20:07.681581" elapsed="14.176862"/>
-</suite>
-<statistics>
-<total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
-</total>
-<tag>
-<stat pass="0" fail="1" skip="0">Dashboard</stat>
-<stat pass="0" fail="1" skip="0">Smoke</stat>
-</tag>
-<suite>
-<stat name="Dailyreport" id="s1" pass="0" fail="1" skip="0">Dailyreport</stat>
-</suite>
-</statistics>
-<errors>
-</errors>
-</robot>
+<kw name="Get Modified Time" owner="OperatingSystem">
+<msg time="2025-10-29T01:41:36.110813" level="INFO" html="true">Last modified time of '&lt;a href="file://C:\Users\User\Downloads\daily_report_20251029_013442.xlsx"&gt;C:\Users\User\Downloads\daily_report_20251029_013442.xlsx&lt;/a&gt;' is 1761676694.</msg>
+<msg time="2025-10-29T01:41:36.110867" level="INFO">${ts} = 1761676694</msg>
+<var>${ts}</var>
+<arg>${p}</arg>
+<arg>epoch</arg>
+<doc>Returns the last modification time of a file or directory.

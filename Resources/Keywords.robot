@@ -72,15 +72,15 @@ Get Paging Numbers
 
     Fail    Cannot parse summary: ${t}
 
-# Click Safe
-#     [Arguments]    ${locator}
-#     Scroll Element Into View    ${locator}
-#     ${ok}=    Run Keyword And Return Status    Click Element    ${locator}
-#     IF    not ${ok}
-#         ${el}=    Get WebElement    ${locator}
-#         Execute Javascript    arguments[0].click();    ARGUMENTS    ${el}
-#     END
-#     Wait Quiet
+Click Safe
+    [Arguments]    ${locator}
+    Scroll Element Into View    ${locator}
+    ${ok}=    Run Keyword And Return Status    Click Element    ${locator}
+    IF    not ${ok}
+        ${el}=    Get WebElement    ${locator}
+        Execute Javascript    arguments[0].click();    ARGUMENTS    ${el}
+    END
+    Wait Quiet
 
 Go Next
     Wait Until Element Is Enabled    ${BTN_NEXT}    10s

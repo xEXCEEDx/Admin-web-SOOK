@@ -1,7 +1,7 @@
 *** Settings ***
 Library    SeleniumLibrary
 Resource   ../../Resources/Keywords.robot
-Resource   ../../pageobjects/DashboardPage.robot
+Resource   ../../Pageobjects/Dashboard/DailyReportPage.robot
 
 # Setup และ Teardown
 Test Setup       Open Browser And Login Admin
@@ -28,6 +28,7 @@ Scenario: Dashboard - Daily Report
 
     # 4. Filter 
     Filter Daily Report 
+
 
      ### clear all filters before search ###
     Clear All Filters

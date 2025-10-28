@@ -4,7 +4,7 @@ Library    BuiltIn
 Library    OperatingSystem
 Library    String
 Library    Collections
-Resource        ../Resources/Variables.robot 
+Resource   ../../Resources/Variables.robot
 
 
 *** Variables ***
