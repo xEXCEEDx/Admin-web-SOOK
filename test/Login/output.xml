@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-10-27T15:18:02.882804" rpa="false" schemaversion="5">
+<suite id="s1" name="Login" source="C:\Users\User\Desktop\robot\ADMIN AUTOMATE\test\Login\login.robot">
+<test id="s1-t1" name="Scenario: Sanity - Admin Login Works" line="12">
+<kw name="Open Browser To Login Page" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-10-27T15:18:03.032422" level="INFO">Opening browser 'chrome' to base url 'https://web-backoffice-uat.tcctech-delivery.com/login'.</msg>
+<arg>${LOGIN_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-10-27T15:18:03.032206" elapsed="1.640177"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-10-27T15:18:04.672734" elapsed="0.036493"/>
+</kw>
+<status status="PASS" start="2025-10-27T15:18:03.031682" elapsed="1.677661"/>
+</kw>
+<kw name="Perform Admin Login" owner="AdminLoginPage">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-10-27T15:18:04.710891" level="INFO">Typing text 'ltjadmin' into text field 'id:username'.</msg>
+<arg>${FIELD_USERNAME}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-27T15:18:04.710382" elapsed="0.121175"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-10-27T15:18:04.831895" level="INFO">Typing password into text field 'id:password'.</msg>
+<msg time="2025-10-27T15:18:04.856544" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${FIELD_PASSWORD}</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-27T15:18:04.831696" elapsed="0.070677"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-10-27T15:18:04.902687" level="INFO">Clicking button 'xpath=//button[normalize-space(.)="เข้าสู่ระบบ"]'.</msg>
+<arg>${BTN_LOGIN}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-27T15:18:04.902516" elapsed="0.060328"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${DASHBOARD_TEXT}</arg>
+<arg>${DEFAULT_TIMEOUT}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-10-27T15:18:04.962994" elapsed="0.213763"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>✅ Login successful.</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-10-27T15:18:05.176918" elapsed="0.000306"/>
+</kw>
+<status status="PASS" start="2025-10-27T15:18:04.709729" elapsed="0.467593"/>
+</kw>
+<kw name="Location Should Contain" owner="SeleniumLibrary">
+<msg time="2025-10-27T15:18:05.180423" level="INFO">Current location contains '/dashboard'.</msg>
+<arg>/dashboard</arg>
+<doc>Verifies that the current URL contains ``expected``.</doc>
+<status status="PASS" start="2025-10-27T15:18:05.177525" elapsed="0.002958"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>✅ Admin login works correctly.</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-10-27T15:18:05.180650" elapsed="0.000161"/>
+</kw>
+<status status="PASS" start="2025-10-27T15:18:03.031145" elapsed="2.149814"/>
+</test>
+<status status="PASS" start="2025-10-27T15:18:02.883807" elapsed="2.297568"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Login" id="s1" pass="1" fail="0" skip="0">Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

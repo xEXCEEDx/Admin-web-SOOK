@@ -1,0 +1,56 @@
+project-root/
+├── pageobjects/
+│   ├── AdminLoginPage.robot
+│   ├── Dashboard/
+│   │   ├── DashboardPage.robot
+│   │   ├── DailyReportPage.robot
+│   │   ├── TransactionMonitoringPage.robot
+│   │   ├── RunnerPaymentReportPage.robot
+│   │   └── UserOverviewDashboardPage.robot
+│   │
+│   ├── MerchantProfile/
+│   │   ├── BrandListPage.robot
+│   │   ├── BrandDetailPage.robot
+│   │   ├── MerchantDetailsPage.robot
+│   │   └── ShopDetailPage.robot
+│   │
+│   ├── OrderManagement/
+│   │   └── AdjustOrderPage.robot
+│   │
+│   ├── Notification/
+│   │   └── NotificationPage.robot
+│   │
+│   ├── Onboard/
+│   │   └── OnboardPage.robot
+│   │
+│   └── Reconcile/
+│       └── ReconcileReportPage.robot
+│
+├── Resources/
+│   ├── Variables.robot
+│   └── CommonKeywords.robot
+│
+└── test/
+    ├── Dashboard/
+    │   ├── DailyReport.robot
+    │   ├── TransactionMonitoring.robot
+    │   ├── RunnerPaymentReport.robot
+    │   └── UserOverviewDashboard.robot
+    │
+    ├── MerchantProfile/
+    │   ├── BrandList.robot
+    │   ├── BrandDetail.robot
+    │   ├── MerchantDetails.robot
+    │   └── ShopDetail.robot
+    │
+    ├── OrderManagement/
+    │   └── AdjustOrder.robot
+    │
+    ├── Notification/
+    │   └── NotificationManagement.robot
+    │
+    ├── Onboard/
+    │   └── Onboard.robot
+    │
+    └── Reconcile/
+        └── ReconcileReport.robot
