@@ -50,7 +50,7 @@ Viewing Options
 Get Paging Numbers
     Wait Until Page Contains Element    ${SUMMARY}    10s
     ${t}=    Get Text    ${SUMMARY}
-    Log To Console    ℹ "${t}"
+    Log To Console    "${t}"
 
     # ดึงเลขทั้งหมดจากข้อความ (ทนกับช่องว่าง/ฟอร์แมต)
     @{nums}=    Get Regexp Matches    ${t}    (\\d+)
@@ -101,37 +101,38 @@ Go Last Visible Page
     Wait Quiet
     
 Pagination Admin
-    Sleep  2s
     # 1) หน้าแรก (1 to N), Prev disabled
     ${has_p1}=    Run Keyword And Return Status    Page Should Contain Element    ${BTN_P1}
     IF    ${has_p1}
         Click Safe    ${BTN_P1}
     END
-    ${f1}    ${t1}    ${tot}=    Get Paging Numbers
+    ${f1}    ${t1}    ${tot} =    Get Paging Numbers
     Should Be Equal As Integers    ${f1}    1
     Element Should Be Disabled     ${BTN_PREV}
-    Log to Console    button is disble Pevious on first page  as expected.
+    Log to Console    ✅button is disble Pevious on first page  as expected.
     ${page_size}=    Evaluate    ${t1}-${f1}+1
 
     # 2) Next แล้วช่วงเลื่อนต่อเนื่อง (from ใหม่ = t1 + 1)
     Go Next
-    ${f2}    ${t2}    ${tot2}=    Get Paging Numbers
+    ${f2}    ${t2}    ${tot2} =    Get Paging Numbers
     ${expected_from2}=    Evaluate    ${t1} + 1
     Should Be Equal As Integers    ${f2}    ${expected_from2}
+    Log to Console    ✅ Next paging works correctly.
 
 
     # 3) กลับ Prev แล้วช่วงกลับมาเท่าเดิม (1..page_size)
     Go Prev
-    ${f3}    ${t3}    ${tot3}=    Get Paging Numbers
+    ${f3}    ${t3}    ${tot3} =    Get Paging Numbers
     Should Be Equal As Integers    ${f3}    1
     Should Be Equal As Integers    ${t3}    ${page_size}
+    Log to Console    ✅ Previous paging works correctly.
 
     # 4) ไปหน้าสุดท้ายที่มองเห็น: to == total และ Next disabled
     ${has_last}=    Run Keyword And Return Status    Page Should Contain Element    ${BTN_LAST_NUM}
     Run Keyword If    ${has_last}    Go Last Visible Page
 
-    ${fl}    ${tl}    ${totl}=    Get Paging Numbers
+    ${fl}    ${tl}    ${totl} =    Get Paging Numbers
     Should Be Equal As Integers    ${tl}    ${totl}
     Element Should Be Disabled     ${BTN_NEXT}
-    Log to Console    button is disabled on last page as expected.
-    Capture Page Screenshot    Pagination_completed.png
+    Log to Console    ✅ button is disabled on last page as expected.
+    
