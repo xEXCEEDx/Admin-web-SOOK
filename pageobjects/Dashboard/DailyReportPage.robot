@@ -11,7 +11,7 @@ Resource   ../../Resources/Variables.robot
 ${BTN_SELECT_DASHBOARD}     //button[contains(text(),'เลือกแดชบอร์ด')]
 ${OPTION_DAILY_REPORT}      //li[contains(text(),'Daily Report')] 
 ${DROPDOWN_DAILY_REPORT}      //button[normalize-space()='Daily Report']
-${BTN_REFRESH_DAILY}        //*[normalize-space()='Refresh']
+${BTN_REFRESH}        //*[normalize-space()='Refresh']
 ${DAILY_REPORT_FIRST_CELL}   //td[normalize-space()='1']
 ${BTN_CLEAR_ALL}     //button[normalize-space()='Clear All']
 ${Search_INPUT_DAILY}    //input[@placeholder='search']   
@@ -26,18 +26,14 @@ ${Column_PAYMENT}       //td[contains(normalize-space(.),'Krungthai NEXT')]
 ${Column_Shopname}      //td[contains(normalize-space(.),'1:2 Coffee - Samyan Mitrtown')]
 
 # ───────── Dropdown Filters ─────────
-${BTN_PAYMENT_FILTER}   //p[normalize-space(.)='วิธีการชำระเงิน']/following::button[@aria-label='Open'][1]
+${BTN_PAYMENT_FILTER}   //p[normalize-space(.)='วิธีการชำระเงิน']/following::button[@aria-label='Open']
 ${OPTION_PAYMENT_NEXT}  //li[normalize-space(.)='Krungthai NEXT']
 
-${BTN_SHOP_FILTER}      //p[normalize-space(.)='Shop Name']/following::button[@aria-label='Open'][1]
+${BTN_SHOP_FILTER}      //p[normalize-space(.)='Shop Name']/following::button[@aria-label='Open']
 ${OPTION_SHOP_12COFFEE}     //li[normalize-space(.)='1:2 Coffee - Samyan Mitrtown']
 
 ${WIN_DOWNLOADS}    %{USERPROFILE}${/}Downloads
 ${DAILY_PATTERN}    daily_report*.xlsx
-
-
-
-
 
 
 
@@ -51,9 +47,9 @@ Navigate to Daily Report Page
 
 Click Daily Report Refresh 
     # 1) รอให้ปุ่ม Refresh มองเห็นและกดได้
-    Wait Until Element Is Visible     ${BTN_REFRESH_DAILY}    10s
-    Wait Until Element Is Enabled     ${BTN_REFRESH_DAILY}    10s
-    Click Element                     ${BTN_REFRESH_DAILY}
+    Wait Until Element Is Visible     ${BTN_REFRESH}    10s
+    Wait Until Element Is Enabled     ${BTN_REFRESH}    10s
+    Click Element                     ${BTN_REFRESH}
     Wait Quiet
     # 3) รอให้ข้อมูลตารางกลับมาแสดง
     Wait Until Page Contains Element  ${DAILY_REPORT_FIRST_CELL}    10s
@@ -115,12 +111,11 @@ Clear All Filters
 
 Export Daily Report To Excel
     Log To Console    ▶ Start exporting Daily Report to Excel...
-    sleep   2s
     # Assuming there is a button to export to excel
-    ${excel_path}=    Verify Any Excel Appeared 
+    ${excel_path}=    Verify Any Excel Appeared daily_report
     Log To Console    ✅ Export Daily Report to Excel name ${excel_path} successfully
 
-Verify Any Excel Appeared
+Verify Any Excel Appeared daily_report
   # 1) จำเวลาและรายชื่อไฟล์ daily_report* ก่อนกด
     ${start}=     Get Time    epoch
     @{before}=    List Files In Directory    ${WIN_DOWNLOADS}    pattern=${DAILY_PATTERN}
