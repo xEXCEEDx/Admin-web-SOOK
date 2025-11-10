@@ -20,10 +20,14 @@ ${WIN_DOWNLOADS}    %{USERPROFILE}${/}Downloads
 
 ${OPTION_STATUS_CANCEL}    //span[contains(text(),'ยกเลิก')]
 ${Column_Count}         //tbody/tr
-${Column_status}       //td[contains(normalize-space(.),'ยกเลิก')]
+${Column_status_cancel}       //td[contains(normalize-space(.),'ยกเลิก')]
 ${DROPDOWN_FILTER_STATUS}    //button[@title='Open']
+${OPTION_STATUS_SUCCESS}    //span[contains(text(),'จัดส่งสำเร็จ')]
+${Column_status_success}       //td[contains(normalize-space(.),'จัดส่งสำเร็จ')]
 
 ${Search_INPUT_TM}    //input[@placeholder='search']
+${Column_Shopname_TM}     //td[contains(normalize-space(.),'KFC')]
+
 *** Keywords ***
 Navigate To Transaction Monitoring Page
     Click Element    ${BTN_SELECT_DASHBOARD}
@@ -95,17 +99,24 @@ _find_new_file_by_pattern_since
     Should Not Be Equal    ${newest}    NONE    msg=No new file found after export
     RETURN    ${newest}
 
-
-filter Transaction Monitoring By Status
-
-    Click Element    ${DROPDOWN_FILTER_STATUS}
-    Wait Until Element Is Visible    ${OPTION_STATUS_CANCEL}    10s
-    Click Element    ${OPTION_STATUS_CANCEL}
-    Wait Quiet
-    ${total_status}=    Get Element Count    ${Column_Count}
-    ${all_status}=      Get Element Count    ${Column_status}
-    Should Be Equal As Integers    ${total_status}    ${all_status}    msg=Not all transactions have status 'ยกเลิก'
-    Log To Console    ✅ All ${all_status} row display Status 'ยกเลิก' successfully.
-
 Search Transaction Monitoring
-    
+    Click Element    ${Search_INPUT_TM}
+    Input Text    ${Search_INPUT_TM}    KFC
+    # รอให้ระบบค้นหาและโหลดข้อมูลใหม่
+    Wait Quiet
+    # รอให้ตารางข้อมูลปรากฏ (หรือผลลัพธ์โหลดเสร็จ)
+    ${total}=      Get Element Count    ${Column_Count}
+    ${all_kfc}=    Get Element Count    ${Column_Shopname_TM}
+    Should Be Equal As Integers    ${all_kfc}    ${total}
+    Log To Console    ✅ All ${total} rows Display "KFC" All.
+
+Filter Transaction Monitoring
+    Click Element    ${DROPDOWN_FILTER_STATUS}
+    Wait Until Element Is Visible    ${OPTION_STATUS_SUCCESS}    10s
+    Click Element    ${OPTION_STATUS_SUCCESS}
+    Wait Quiet 
+    ${total_status}=    Get Element Count    ${Column_Count}
+    ${all_status} =      Get Element Count    ${Column_status_success}
+    sleep   3s
+    Should Be Equal As Integers    ${total_status}    ${all_status}    msg=Not all transactions have status 'จัดส่งสำเร็จ'   
+    Log To Console    ✅ All ${total_status} row display Status 'จัดส่งสำเร็จ' successfully.

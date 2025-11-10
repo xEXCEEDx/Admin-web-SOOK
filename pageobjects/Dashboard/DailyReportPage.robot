@@ -163,3 +163,12 @@ _find_new_file_by_pattern_since
     Should Not Be Equal    ${newest}    NONE    msg=No new daily_report file found after export
     RETURN    ${newest}
 
+Filter Transaction Monitoring
+    Click Element    ${DROPDOWN_FILTER_STATUS}
+    Wait Until Element Is Visible    ${OPTION_STATUS_SUCCESS}    10s
+    Click Element    ${OPTION_STATUS_SUCCESS}
+    Wait Quiet
+    ${total_status}=    Get Element Count    ${Column_Count}
+    ${all_status} =      Get Element Count    ${Column_status_success}
+    Should Be Equal As Integers    ${total_status}    ${all_status}    msg=Not all transactions have status 'จัดส่งสำเร็จ'   
+    Log To Console    ✅ All ${total_status} row display Status 'จัดส่งสำเร็จ' successfully.

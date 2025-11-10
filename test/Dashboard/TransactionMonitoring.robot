@@ -19,22 +19,16 @@ Scenario: Dashboard - Transaction Monitoring
     
     Click Transaction Monitoring Clear All
 
-    # Refresh Transaction Monitoring Page
+    Refresh Transaction Monitoring Page
 
-    # Export Transaction Monitoring To Excel
-
-    Filter Transaction Monitoring By Status
+    Export Transaction Monitoring To Excel
     
-    # Search Transaction Monitoring
+    Search Transaction Monitoring
 
-    
+    Filter Transaction Monitoring 
 
-    # Filter Transaction Monitoring By Channel
+    Viewing Options    5    10    25    30    50
 
-    # Clear Transaction Monitoring Filters
+    Pagination Admin
 
-    # Viewing Options    5    10    25    30    50
-
-    # Pagination Admin
-
-    # Log To Console    ✅ Test Completed: Transaction Monitoring workflow successful.
+    Log To Console    ✅ Test Completed: Transaction Monitoring workflow successful.
